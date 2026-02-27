@@ -40,3 +40,7 @@
     color: #282928
 }
 
+.body-text-wrapper > .left-column {
+    /* height: 300px; */
+    width: 600px;
+}

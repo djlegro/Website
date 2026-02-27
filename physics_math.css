@@ -1,0 +1,10 @@
+/* Body Styles */
+.body-text-wrapper {
+    height: 600px;
+}
+
+.body-text-wrapper > .left-column {
+    width: 600px;
+}
+
+

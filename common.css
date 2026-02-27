@@ -85,7 +85,6 @@ body {
     background-color: #dfd2cb;
 }
 
-
 /* Body - Navigation Links Styles */
 .nav-links-wrapper {
     background-color: #dfd2cb;
@@ -110,13 +109,27 @@ body {
 }
 
 /* Body - text Styles */
-.body-text-wrapper {
-    height: 600px; 
+.body-text-wrapper { 
     background-color: #dfd2cb;
     color: #3c9a77;
     display: flex;
     justify-content: space-between;
-    align-items: first baseline;
+}
+
+/* Homepage contact section */
+.contact-wrapper {
+    height: 200px;
+    border-bottom: 5px solid #3c9a77;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-wrapper > .center-column {
+    color: #3c9a77;
+    padding: 20px;
+    margin: 45px;
+    text-align: center;
 }
 
 
