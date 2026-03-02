@@ -24,7 +24,11 @@ h3 {
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
-    margin-left: 157px;      
+    margin-left: 157px;    
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header Body Styles */

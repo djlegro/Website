@@ -6,13 +6,18 @@
 }
 
 .body-text-wrapper > .left-column {
-    width: 600px;
+    width: 300px;
 }
 
 .body-text-wrapper > .center-column {
-    width: 600px;
+    width: 300px;
 }
 
 .body-text-wrapper > .right.column {
-    width: 600px;
+    width: 300px;
+}
+
+h4 {
+    text-decoration: underline;
+    font-size: 2em;
 }
