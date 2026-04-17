@@ -3,18 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: Alternate Data Streams</title>
+    <title>My Universal Blip</title>
 
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f3793b933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/projects_page.css">
+
 </head>
 <body>
-    <h1>The Purpose</h1>
+    <div class="header-wrapper">
 
-    <p>
+        <div class="left-column">  
+             
+        </div>
         
-    </p>
+        <div class="center-column">
+            <div class="image">
+                <img src="../images/dj.png" alt="Profile Photo" style="border: 5px solid black" width="100" height="100%">
+            </div> 
+            <div class="nav-wrapper">
+                <div class="title">
+                    <h2>
+                        My Universal Blip
+                    </h2>
+                </div>
+                <div class="author">
+                    <h1>
+                        Author: DJ
+                    </h1>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="right-column">
+            <div class="links">
+                    Find Me At: <br>
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@myuniversalblip706/videos" target="_blank">YouTube</a><br>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/djhacksmash/" target="_blank">Instagram</a>
+            </div>
+        </div>
+         
+    </div>
 
-    <h1>The Code</h1>
-    <h1>The Steps</h1>
-</body>
+    <div class="nav-links-wrapper">
+        <div class="links">
+            <a href="../index.html">Introduction</a>
+            <a href="../background.html">Background</a>
+            <a href="../education.html">Education</a>
+            <a href="../certs_skills.html">Certificates & Skills</a>
+            <a href="../blog.html">Blog</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../physics_math.html">Physics & Math</a>
+        </div>
+    </div>
+
+     <div class="title-wrapper">
+        <h5>
+            Alternate Data Streams: A Covert Method for Hiding Malicious Content
+        </h5>
+    </div>
+
+    <div class="body-text-wrapper">
+        <div class="left-column">
+            <h4>The Purpose</h4>
+
+            <p>The purpose of this project is to demonstrate how cyber threat actors use alternate data streams to 
+                hide malicious content and how to identify the malicious activity. First, this write-up will define 
+                alternate data streams (ADS) and their typical function in a Windows environment. Then, a demonstration 
+                will be given on how they are exploited by cyber threat actors. Lastly, detection techniques will be 
+                given for identification of the activity and methods to remove it.  </p>
+
+            <h4>Definition: Alternate Data Stream</h4>
+
+            <p>Alternate data streams (ADSs) exist within Windows' New Technology File System (NTFS). Every file in the 
+                file structure is designed with a default unnamed data stream referred to as $DATA and hidden alternate 
+                data streams. The default data stream is automatically opened when a file is accessed on the filesystem. 
+                However, the ADSs are not readily visible to the user and therefore hidden. 
+            </p>
+
+            <h4>Covert Attributes</h4>
+
+            <p>
+                - An ADS does not modify the file size of the default data stream (timestamp is modified). <br>
+                - An ADS can be any size. <br>
+                - An ADS can be added to any file type and can be used to hide any type of content. <br>
+                - An ADS can be used to create folders by any user with 'create folder' permissions. <br>
+                - Adding, modifying, or deleting an ADS does not modify the file hash. <br>
+                - ADSs can evade anti-virus software because they can circumvent locked files using stream-aware
+                applications. Data can be added to an ADS of a locked file where AV software cannot find ADSs on 
+                locked files. <br> 
+                - NTFS and MFT does not provide a mechanism to disable ADSs. <br>
+
+            </p>
+
+        </div>
+        <div class="center-column">
+            <h4>Attack Code</h4>
+
+            <p style="font-family: 'Nanum Gothic Coding', monospace; font-size: 16px; color: rgb(116, 113, 113);">Set-Content -path .\Myfile.txt -stream {secret stream} -value {secret content}</p>
+
+        </div>
+        <div class="right-column">
+            <h4>Detection Code</h4>
+
+            <p style="font-family: 'Nanum Gothic Coding', monospace; font-size: 16px; color: rgb(116, 113, 113);">Get-Content .\MyFile.txt -Stream {stream name}<br>
+            <br>
+            Get-Item .\MyFile.txt -Stream * <br>
+        
+            </p>
+            
+
+        </div> 
+    </div>
+
+    <div class="contact-wrapper">
+        <div class="left-column">
+        </div>
+        <div class="center-column">
+            Contact Me: <br>
+            djlegro@gmail.com <br><br>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="right-column">
+        </div> 
+    </div>
+    
+    
+<body>
 </html>
