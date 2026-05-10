@@ -1,0 +1,46 @@
+/* Homepage Parallax Image */
+.background-image-wrapper {
+    background-image: url(../images/background.jpeg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Homepage contact section */
+.contact-wrapper {
+    height: 200px;
+    border-bottom: 5px solid #3c9a77;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-wrapper > .center-column {
+    color: #3c9a77;
+    padding: 20px;
+    margin: 45px;
+    text-align: center;
+}
+
+/* Body - Quote Styles */
+.quote-wrapper {
+    background-color: #dfd2cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #3c9a77;
+}
+.quote-wrapper > .center-column {
+    font-size: 0.8em;
+    height: 50px;
+    width: 360px;
+    padding-top: 20px;
+    color: #282928
+}
+
+.body-text-wrapper > .left-column {
+    /* height: 300px; */
+    width: 600px;
+}
