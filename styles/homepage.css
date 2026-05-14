@@ -11,14 +11,15 @@
 /* Homepage contact section */
 .contact-wrapper {
     height: 200px;
-    border-bottom: 5px solid #3c9a77;
+    background-color: #f6f2ef;
+    border-bottom: 5px solid #926f98;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .contact-wrapper > .center-column {
-    color: #3c9a77;
+    color: #926f98;
     padding: 20px;
     margin: 45px;
     text-align: center;
@@ -26,11 +27,11 @@
 
 /* Body - Quote Styles */
 .quote-wrapper {
-    background-color: #dfd2cb;
+    background-color: #f6f2ef;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid #3c9a77;
+    border-top: 5px solid #926f98;
 }
 .quote-wrapper > .center-column {
     font-size: 0.8em;
@@ -41,6 +42,53 @@
 }
 
 .body-text-wrapper > .left-column {
-    /* height: 300px; */
+    height: 400px;
     width: 600px;
 }
+
+.body-text-wrapper > .center-column {
+    height: 400px;
+    width: 600px;
+}
+
+.body-text-wrapper > .right-column {
+    height: 400px;
+    width: 600px;
+}
+
+body {
+  background-color: #f0f0f0;
+  padding-top: 50px;
+}
+
+.notepad {
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.top-bar {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  border: none;
+  resize: none; /* Prevents manual resizing */
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
+  background-size: 100% 1.5em; /* Creates lined paper effect */
+}
+
+
+
