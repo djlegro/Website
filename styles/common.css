@@ -137,10 +137,13 @@ body {
 }
 
 .sticky-note-left {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
   background-color: #fefabc; /* Standard yellow note color */
   padding: 20px;
   width: 250px;
-  min-height: 250px;
+  height: 250px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transform: rotate(-2deg); /* Slight tilt for realism */
   font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -149,10 +152,13 @@ body {
 }
 
 .sticky-note-right {
+    font-family: "The Girl Next Door", cursive;
+  font-weight: 400;
+  font-style: normal;
   background-color: #fefabc; /* Standard yellow note color */
   padding: 20px;
   width: 250px;
-  min-height: 250px;
+  height: 250px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transform: rotate(3deg); /* Slight tilt for realism */
   font-family: 'Comic Sans MS', cursive, sans-serif;

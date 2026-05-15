@@ -8,13 +8,13 @@
 /* Body Styles */
 .body-text-wrapper {
     display: flex;
-    justify-content: center;
-    height: 1500px;
+    justify-content: flex-start;
+    height: 1300px;
 }
 
 .body-text-wrapper > .left-column {
-    width: 300px;
-    padding: 10px 80px 10px 10px;
+    width: 400px;
+    padding: 10px 80px 10px 30px;
 }
 
 .body-text-wrapper > .center-column {
@@ -35,6 +35,4 @@ h4 {
 h5 {
     color: #926f98;
     font-size: 1.5em;
-    margin-left: 70px;
-    margin-top: 50px;
 }

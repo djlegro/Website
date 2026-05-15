@@ -1,9 +1,74 @@
-/* Body Styles */
-.body-text-wrapper {
-    height: 600px;
+/* Headers */
+h {
+    font-size: 4em;
+    font-weight: bold;
+    margin-left: 70px;
 }
 
-.body-text-wrapper > .left-column {
-    width: 600px;
+h-1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 10px;
 }
+
+/* Extra Space */
+.extra-space {
+    height: 60px;
+}
+
+/* Body Styles */
+.body-text-wrapper {
+    height: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.body-text-wrapper > .center-column {
+    height: 1200px;
+    width: 900px;
+    display: grid;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.body-text-wrapper > .center-column > .resume-header {
+    height: 300px;
+    width: 900px;
+    background-color: #a78cad;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.body-text-wrapper > .center-column > .resume-body {
+    height: 900px;
+    width: 900px;
+    color: black;
+    display: flex;
+}
+
+.body-text-wrapper > .center-column > .resume-body > .resume-body-left {
+    height: 900px;
+    width: 340px;
+    display: grid;
+    float: left;
+    border-bottom-left-radius: 1px solid black;
+    background-color: #bcb7bd;
+    border-radius: 0px 0px 0px 10px;
+    border-bottom: 1px solid black;
+}
+
+.body-text-wrapper > .center-column > .resume-body > .resume-body-right {
+    height: 900px;
+    width: 560px;
+    display: grid;
+    background-color: white;
+    border-radius: 0px 0px 10px 0px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 
