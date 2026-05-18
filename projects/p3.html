@@ -7,8 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Homemade+Apple&family=Reenie+Beanie&family=Shadows+Into+Light&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f3793b933.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/projects_page.css">
@@ -27,12 +26,10 @@
             </div> 
             <div class="nav-wrapper">
                 <div class="title">
-                    <h2>
+                    <h2 style="font-size: 3.8em;">
                         My Universal Blip
                     </h2>
-                </div>
-                <div class="author">
-                    <h1>
+                    <h1 style="font-size: 1.5em; margin-left: 150px;">
                         Author: DJ
                     </h1>
                 </div>
@@ -53,20 +50,17 @@
     </div>
 
     <div class="nav-links-wrapper">
-       <div class="links">
-            <a href="../index.html">Introduction</a>
-            <a href="../background_education.html">Background & Education</a>
-            <a href="../blog.html">Blog</a>
+        <div class="links">
+            <a href="../index.html">Introduction ·</a>
+            <a href="../background.html">Background ·</a>
+            <a href="../blog.html">Blog ·</a>
             <a href="../projects.html">Projects</a>
-            <a href="../physics_math.html">Physics & Math</a>
         </div>
     </div>
 
     <div class="body-text-wrapper">
         <div class="sticky-note-left">
-            <h5>
-                Alternate Data Streams: A Covert Method for Hiding Malicious Content
-            </h5>
+                <p style="font-size: 1.5em; text-indent: 10px;">Alternate Data Streams: A Covert Method for Hiding Malicious Content</p>
         </div>
         <div class="left-column">
             <h4>The Purpose</h4>
@@ -103,20 +97,16 @@
         </div>
         <div class="center-column">
             <h4>Attack Code</h4>
-
-            <p style="font-family: 'Nanum Gothic Coding', monospace; font-size: 16px; color: rgb(116, 113, 113);">Set-Content -path .\Myfile.txt -stream {secret stream} -value {secret content}</p>
-
+            <div class="code">
+                <p>Set-Content -path .\Myfile.txt -stream {secret stream} -value {secret content}</p>
+            </div>
         </div>
         <div class="right-column">
             <h4>Detection Code</h4>
-
-            <p style="font-family: 'Nanum Gothic Coding', monospace; font-size: 16px; color: rgb(116, 113, 113);">Get-Content .\MyFile.txt -Stream {stream name}<br>
-            <br>
-            Get-Item .\MyFile.txt -Stream * <br>
-        
-            </p>
-            
-
+            <div class="code">
+                <p>Get-Content .\MyFile.txt -Stream {stream name}<br></p>
+                <p>Get-Item .\MyFile.txt -Stream * <br></p>
+            </div>
         </div> 
     </div>
 
@@ -125,7 +115,7 @@
         </div>
         <div class="center-column">
             Contact Me: <br>
-            djlegro@gmail.com <br><br>
+            djhacksmash@gmail.com <br><br>
             <i class="fa-solid fa-heart"></i>
         </div>
         <div class="right-column">
