@@ -1,8 +1,9 @@
 /* Headers */
 
-h {
-    font-size: 3em;
+h-1 {
+    font-size: 1.5em;
     text-decoration: underline;
+    color: rgb(188, 76, 151);
 }
 
 /* Body Styles */
@@ -29,4 +30,9 @@ h {
     width: 300px;
     height: 600px;
     text-align: center;
+}
+
+.body-text-wrapper > .corkboard > .right-column > .sticky-note-right {
+    color: black;
+    font-size: 1.25em;
 }
