@@ -1,9 +1,8 @@
 /* Headers */
 
-h-1 {
-    font-size: 1.5em;
+h {
+    font-size: 3em;
     text-decoration: underline;
-    color: rgb(188, 76, 151);
 }
 
 /* Body Styles */
@@ -14,35 +13,20 @@ h-1 {
     padding-top: 50px;
 }
 
-.body-text-wrapper > .corkboard {
-    display: flex;
-    justify-content: space-around;
-}
-
 .body-text-wrapper > .corkboard > .left-column {
     width: 300px;
     height: 600px;
     text-align: center;
-    justify-content: flex-start;
 }
 
-.body-text-wrapper > .corkboard > .left-column > .sticky-note-left {
-    color: black;
-    font-size: 1.25em;
-}
-
-
-.body-text-wrapper > .corkboard > .center-column {
+.body-text-wrapper > .corkboard >.center-column {
     width: 300px;
     height: 600px;
     text-align: center;
 }
 
-.body-text-wrapper > .corkboard > .right-column {
+.body-text-wrapper > .corkboard >.right-column {
     width: 300px;
     height: 600px;
     text-align: center;
 }
-
-
-
