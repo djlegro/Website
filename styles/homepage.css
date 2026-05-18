@@ -1,28 +1,11 @@
 /* Homepage Parallax Image */
 .background-image-wrapper {
     background-image: url(../images/background.jpeg);
-    height: 300px;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Homepage contact section */
-.contact-wrapper {
-    height: 200px;
-    background-color: #f6f2ef;
-    border-bottom: 5px solid #926f98;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-wrapper > .center-column {
-    color: #926f98;
-    padding: 20px;
-    margin: 45px;
-    text-align: center;
 }
 
 /* Body - Quote Styles */
@@ -32,6 +15,7 @@
     justify-content: center;
     align-items: center;
     border-top: 5px solid #926f98;
+    
 }
 .quote-wrapper > .center-column {
     font-size: 0.8em;
@@ -41,26 +25,28 @@
     color: #282928
 }
 
+.body-text-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
 .body-text-wrapper > .left-column {
-    height: 400px;
-    width: 600px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
 }
 
 .body-text-wrapper > .center-column {
-    height: 400px;
-    width: 600px;
+  width: 400px;
 }
 
 .body-text-wrapper > .right-column {
-    height: 400px;
-    width: 600px;
+  width: 350px;
 }
 
-body {
-  background-color: #f0f0f0;
-  padding-top: 50px;
-}
 
+/* Notepad Effects */
 .notepad {
   width: 400px;
   background: #fff;
@@ -88,6 +74,94 @@ textarea {
   outline: none;
   background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
   background-size: 100% 1.5em; /* Creates lined paper effect */
+}
+
+
+/* corkboard with pinned photo effect */
+/* .corkboard {
+  background-color: #c89657; 
+  background-image: radial-gradient(#d6aa75 20%, transparent 20%), 
+                    radial-gradient(#b87f41 20%, transparent 20%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* 2. Photo Wrapper & Rotation */
+.photo-wrapper {
+  position: relative;
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.photo-wrapper:hover {
+  transform: rotate(0deg) scale(1.05);
+  z-index: 10;
+}
+
+/* 3. Realistic Photo Frame */
+.photo {
+  background-color: #fff;
+  padding: 15px 15px 48px 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.photo img {
+  width: 250px;
+  height: 277px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-caption {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* 4. The Realistic Pin */
+.pin {
+  width: 12px;
+  height: 35px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  margin-left: -6px;
+  z-index: 5;
+  transform-origin: bottom center;
+  transform: rotate(15deg);
+}
+
+/* The Head of the Pin */
+.pin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #b30000);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* The Needle of the Pin */
+.pin::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 2px;
+  height: 25px;
+  background: linear-gradient(to right, #ccc, #888, #333);
+  box-shadow: 1px 0 1px rgba(0,0,0,0.3);
 }
 
 
