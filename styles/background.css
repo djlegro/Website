@@ -19,13 +19,14 @@ h-1 {
 
 /* Body Styles */
 .body-text-wrapper {
-    height: 1300px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;
+    padding-top: 20px;
 }
 
 .body-text-wrapper > .center-column {

@@ -8,27 +8,13 @@
     background-size: cover;
 }
 
-/* Body - Quote Styles */
-.quote-wrapper {
-    background-color: #f6f2ef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 5px solid #926f98;
-    
-}
-.quote-wrapper > .center-column {
-    font-size: 0.8em;
-    height: 50px;
-    width: 360px;
-    padding-top: 20px;
-    color: #282928
-}
 
 .body-text-wrapper {
   display: flex;
   justify-content: space-evenly;
-  height: 400px;
+  height: fit-content;
+  padding-top: 60px;
+  border-top: 5px solid #926f98;
 }
 
 .body-text-wrapper > .left-column {
@@ -77,19 +63,8 @@ textarea {
 }
 
 
-/* corkboard with pinned photo effect */
-/* .corkboard {
-  background-color: #c89657; 
-  background-image: radial-gradient(#d6aa75 20%, transparent 20%), 
-                    radial-gradient(#b87f41 20%, transparent 20%);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+
+
 
 /* 2. Photo Wrapper & Rotation */
 .photo-wrapper {
