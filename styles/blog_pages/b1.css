@@ -14,35 +14,53 @@ h-1 {
     padding-top: 50px;
 }
 
-.body-text-wrapper > .corkboard {
-    display: flex;
-    justify-content: space-around;
+.body-text-wrapper > .corkboard >  {
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+      padding-top: 10px;
 }
 
-.body-text-wrapper > .corkboard > .left-column {
+.body-text-wrapper > .corkboard > .body1-blog {
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+}
+
+.body-text-wrapper > .corkboard > .body1-blog > .left-column {
     width: 300px;
-    height: 600px;
-    text-align: center;
     justify-content: flex-start;
+    text-align: center;
 }
 
-.body-text-wrapper > .corkboard > .left-column > .sticky-note-left {
+.body-text-wrapper > .corkboard > .body1-blog > .left-column > .sticky-note-left {
     color: black;
     font-size: 1.25em;
 }
 
-
-.body-text-wrapper > .corkboard > .center-column {
+.body-text-wrapper > .corkboard > .body1-blog > .center-column {
     width: 300px;
-    height: 600px;
     text-align: center;
     padding-top: 30px;
 }
 
-.body-text-wrapper > .corkboard > .right-column {
+.body-text-wrapper > .corkboard > .body1-blog > .right-column {
     width: 300px;
-    height: 600px;
     text-align: center;
+}
+
+.body-text-wrapper > .corkboard > .body2-blog {
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+      height: 400px;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog {
+      display: flex;
+      justify-content: space-around;
+      width: fit-content;
+      height: 400px;
 }
 
 /* 2. Photo Wrapper & Rotation */
@@ -53,6 +71,17 @@ h-1 {
   }
   
   .photo-wrapper:hover {
+    transform: rotate(0deg) scale(1.05);
+    z-index: 10;
+  }
+
+  .photo-wrapper-1 {
+    position: relative;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-wrapper-1:hover {
     transform: rotate(0deg) scale(1.05);
     z-index: 10;
   }
@@ -67,7 +96,7 @@ h-1 {
   }
   
   .photo img {
-    width: 250px;
+    width: 264px;
     height: 260px;
     object-fit: cover;
     display: block;
@@ -77,12 +106,12 @@ h-1 {
   .photo-caption {
     margin-top: 15px;
     text-align: center;
-    font-family: 'Caveat', cursive, sans-serif;
+    font-family: "The Girl Next Door", cursive;
     font-size: 1.4rem;
     color: #333;
   }
   
-  /* 4. The Realistic Pin */
+  /* Blue Pin */
   .pin {
     width: 12px;
     height: 35px;
@@ -95,7 +124,7 @@ h-1 {
     transform: rotate(15deg);
   }
   
-  /* The Head of the Pin */
+  /* The Head of the BluePin */
   .pin::before {
     content: '';
     position: absolute;
@@ -108,8 +137,46 @@ h-1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset -1px -1px 2px rgba(255, 255, 255, 0.5);
   }
   
-  /* The Needle of the Pin */
+  /* The Needle of the Blue Pin */
   .pin::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 2px;
+    height: 25px;
+    background: linear-gradient(to right, #ccc, #888, #333);
+    box-shadow: 1px 0 1px rgba(0,0,0,0.3);
+  }
+
+  /* Red Pin */
+  .pin-1 {
+    width: 12px;
+    height: 35px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -6px;
+    z-index: 5;
+    transform-origin: bottom center;
+    transform: rotate(-15deg);
+  }
+  
+  /* The Head of the RedPin */
+  .pin-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ff5c4d, #b31b00);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* The Needle of the Red Pin */
+  .pin-1::after {
     content: '';
     position: absolute;
     top: 10px;
