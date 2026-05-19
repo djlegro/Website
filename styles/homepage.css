@@ -84,6 +84,7 @@ textarea {
   padding: 15px 15px 48px 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  border: 0.5px solid grey;
 }
 
 .photo img {
@@ -91,6 +92,7 @@ textarea {
   height: 277px;
   object-fit: cover;
   display: block;
+  border: 0.5px solid grey;
 }
 
 .photo-caption {
