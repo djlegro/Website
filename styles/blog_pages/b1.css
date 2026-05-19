@@ -36,6 +36,7 @@ h-1 {
     width: 300px;
     height: 600px;
     text-align: center;
+    padding-top: 30px;
 }
 
 .body-text-wrapper > .corkboard > .right-column {
@@ -43,6 +44,81 @@ h-1 {
     height: 600px;
     text-align: center;
 }
+
+/* 2. Photo Wrapper & Rotation */
+.photo-wrapper {
+    position: relative;
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-wrapper:hover {
+    transform: rotate(0deg) scale(1.05);
+    z-index: 10;
+  }
+  
+  /* 3. Realistic Photo Frame */
+  .photo {
+    background-color: #fff;
+    padding: 15px 15px 48px 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    border: 0.5px solid grey;
+  }
+  
+  .photo img {
+    width: 250px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border: 0.5px solid grey;
+  }
+  
+  .photo-caption {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  /* 4. The Realistic Pin */
+  .pin {
+    width: 12px;
+    height: 35px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -6px;
+    z-index: 5;
+    transform-origin: bottom center;
+    transform: rotate(15deg);
+  }
+  
+  /* The Head of the Pin */
+  .pin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #4df6ff, #009eb3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset -1px -1px 2px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* The Needle of the Pin */
+  .pin::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 2px;
+    height: 25px;
+    background: linear-gradient(to right, #ccc, #888, #333);
+    box-shadow: 1px 0 1px rgba(0,0,0,0.3);
+  }
 
 
 
