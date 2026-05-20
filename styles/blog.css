@@ -29,19 +29,3 @@ h {
     text-align: center;
 }
 
-/* corkboard with pinned photo effect */
-.corkboard {
-  background-color: #c89657; 
-  background-image: radial-gradient(#d6aa75 20%, transparent 20%), 
-                    radial-gradient(#b87f41 20%, transparent 20%);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  width: 1500px;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 15px solid black;
-  border-style: ridge;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
-}

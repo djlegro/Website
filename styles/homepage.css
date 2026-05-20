@@ -32,34 +32,88 @@
 }
 
 
-/* Notepad Effects */
-.notepad {
+/* Notebook Page Setup */
+.page {
   width: 400px;
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  height: 350px;
+  background: white;
+  background-image: linear-gradient(#e0e0e0 1px, transparent 1px);
+  background-size: 100% 2rem; /* Matches the line-height of the text */
+  border-left: 2px solid #ffadad; 
+  padding: 2rem 1rem 0 1rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Courier New', Courier, monospace; 
+  
+}
+
+/* Base style for every line */
+.line {
+  font-size: 1.1rem;
+  line-height: 2rem; /* Perfectly aligns text to the notebook lines */
+  margin: 0;
+  white-space: nowrap;
   overflow: hidden;
+  width: 0;
+  opacity: 0; /* Hidden before typing starts */
+  border-right: .15em solid transparent; /* Cursor placeholder */
+  color: #333;
 }
 
-.top-bar {
-  background: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+/* Chaining the 8 animations (3s duration per line) */
+.line-1 {
+  opacity: 1;
+  animation: typing 3s steps(40) forwards, blink-caret .75s step-end 4;
 }
 
-textarea {
-  width: 100%;
-  height: 300px;
-  padding: 20px;
-  border: none;
-  resize: none; /* Prevents manual resizing */
-  font-size: 16px;
-  line-height: 1.5;
-  outline: none;
-  background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
-  background-size: 100% 1.5em; /* Creates lined paper effect */
+.line-2 {
+  animation: typing 3s steps(40) 3s forwards, blink-caret .75s step-end 3s 4;
+}
+
+.line-3 {
+  animation: typing 3s steps(40) 6s forwards, blink-caret .75s step-end 6s 4;
+}
+
+.line-4 {
+  animation: typing 3s steps(40) 9s forwards, blink-caret .75s step-end 9s 4;
+}
+
+.line-5 {
+  animation: typing 3s steps(40) 12s forwards, blink-caret .75s step-end 12s 4;
+}
+
+.line-6 {
+  animation: typing 3s steps(40) 15s forwards, blink-caret .75s step-end 15s 4;
+}
+
+.line-7 {
+  animation: typing 3s steps(40) 18s forwards, blink-caret .75s step-end 18s 4;
+}
+
+.line-8 {
+  /* Last line cursor blinks indefinitely */
+  animation: typing 3s steps(40) 21s forwards, blink-caret .75s step-end 21s infinite;
+}
+
+/* Keyframes */
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* Keyframes */
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 
 
