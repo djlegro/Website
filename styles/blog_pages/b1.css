@@ -6,6 +6,25 @@ h-1 {
     color: rgb(188, 76, 151);
 }
 
+  /* corkboard with pinned photo effect */
+.corkboard {
+  background-color: #c89657; 
+  background-image: radial-gradient(#d6aa75 20%, transparent 20%), 
+                    radial-gradient(#b87f41 20%, transparent 20%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  width: 1300px;
+  height: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  border: 15px solid black;
+  border-style: ridge;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
 /* Body Styles */
 .body-text-wrapper {
     display: flex;
@@ -14,22 +33,13 @@ h-1 {
     padding-top: 50px;
 }
 
-.body-text-wrapper > .corkboard >  {
-      display: flex;
-      justify-content: space-around;
-      width: fit-content;
-      padding-top: 10px;
-}
-
 .body-text-wrapper > .corkboard > .body1-blog {
       display: flex;
       justify-content: space-around;
-      width: fit-content;
+      height: 400px;
 }
 
 .body-text-wrapper > .corkboard > .body1-blog > .left-column {
-    width: 300px;
-    justify-content: flex-start;
     text-align: center;
 }
 
@@ -39,29 +49,42 @@ h-1 {
 }
 
 .body-text-wrapper > .corkboard > .body1-blog > .center-column {
-    width: 300px;
     text-align: center;
     padding-top: 30px;
 }
 
 .body-text-wrapper > .corkboard > .body1-blog > .right-column {
-    width: 300px;
     text-align: center;
-}
+} 
 
-.body-text-wrapper > .corkboard > .body2-blog {
+ .body-text-wrapper > .corkboard > .body2-blog {
       display: flex;
-      justify-content: space-around;
-      width: fit-content;
-      height: 400px;
+      justify-content: center;
+      height: 500px;
 }
 
 .body-text-wrapper > .corkboard > .body3-blog {
       display: flex;
       justify-content: space-around;
-      width: fit-content;
       height: 400px;
 }
+
+.body-text-wrapper > .corkboard > .body3-blog > .left-column {
+    text-align: center;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog > .left-column > .sticky-note-left {
+    color: black;
+    font-size: 1.25em;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog > .center-column {
+    text-align: center;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog > .right-column {
+    text-align: center;
+} 
 
 /* 2. Photo Wrapper & Rotation */
 .photo-wrapper {
@@ -186,6 +209,56 @@ h-1 {
     background: linear-gradient(to right, #ccc, #888, #333);
     box-shadow: 1px 0 1px rgba(0,0,0,0.3);
   }
+
+  .blog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff5f7; /* Very light pink background */
+    border: 2px solid #ffc1d6; /* Soft pink border */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .blog-title {
+    color: #ff6b95;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px dashed #ffc1d6;
+    padding-bottom: 10px;
+  }
+
+  .blog-content {
+    color: #7a5c65;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .pink-accent {
+    color: #ff85a2;
+    font-weight: bold;
+  }
+
+  /* Style for a simple button inside */
+  .pink-button {
+    margin-top: 20px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .pink-button:hover {
+    background-color: #ff6b95;
+    transform: scale(1.05);
+  }
+
+
 
 
 
