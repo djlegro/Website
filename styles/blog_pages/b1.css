@@ -3,7 +3,7 @@
 h-1 {
     font-size: 1.5em;
     text-decoration: underline;
-    color: rgb(46, 150, 58);
+    color: rgb(188, 76, 151);
 }
 
   /* corkboard with pinned photo effect */
@@ -13,8 +13,8 @@ h-1 {
                     radial-gradient(#b87f41 20%, transparent 20%);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
-  width: 1400px;
-  height: 3750px;
+  width: 1300px;
+  height: 1350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,43 +36,50 @@ h-1 {
 .body-text-wrapper > .corkboard > .body1-blog {
       display: flex;
       justify-content: space-around;
-      height: 360px;
-      padding-top: 40px;
+      height: 400px;
 }
 
 .body-text-wrapper > .corkboard > .body1-blog > .left-column {
     text-align: center;
 }
 
+.body-text-wrapper > .corkboard > .body1-blog > .left-column > .sticky-note-left {
+    color: black;
+    font-size: 1.25em;
+}
+
 .body-text-wrapper > .corkboard > .body1-blog > .center-column {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .body-text-wrapper > .corkboard > .body1-blog > .right-column {
     text-align: center;
 } 
 
-.body-text-wrapper > .corkboard > .body1-blog > .right-column > .sticky-note-right {
-    color: black;
-}
-
  .body-text-wrapper > .corkboard > .body2-blog {
       display: flex;
       justify-content: center;
-      height: 400px;
+      height: 500px;
 }
 
 .body-text-wrapper > .corkboard > .body3-blog {
       display: flex;
       justify-content: space-around;
-      height: 300px;
+      height: 400px;
 }
 
 .body-text-wrapper > .corkboard > .body3-blog > .left-column {
     text-align: center;
-    display: flex;
-    justify-content: center;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog > .left-column > .sticky-note-left {
+    color: black;
+    font-size: 1.25em;
+}
+
+.body-text-wrapper > .corkboard > .body3-blog > .center-column {
+    text-align: center;
 }
 
 .body-text-wrapper > .corkboard > .body3-blog > .right-column {
@@ -80,101 +87,6 @@ h-1 {
     justify-content: center;
     text-align: center;
 } 
-
-.body-text-wrapper > .corkboard > .body4-blog {
-    display: flex;
-    justify-content: center;
-    height: 600px;
-}
-
-.body-text-wrapper > .corkboard > .body4-blog > .right-column {
-    text-align: center;
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body5-blog {
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-}
-
-.body-text-wrapper > .corkboard > .body5-blog > .left-column {
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body5-blog > .right-column {
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body6-blog {
-    display: flex;
-    justify-content: center;
-    height: 610px;
-}
-
-.body-text-wrapper > .corkboard > .body6-blog > .left-column {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.body-text-wrapper > .corkboard > .body6-blog > .center-column {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.body-text-wrapper > .corkboard > .body6-blog > .right-column {
-    padding-top: 50px;
-}
-
-.body-text-wrapper > .corkboard > .body7-blog {
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-}
-
-.body-text-wrapper > .corkboard > .body7-blog > .left-column {
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body7-blog > .right-column {
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body8-blog {
-    display: flex;
-    justify-content: center;
-    height: 600px;
-}
-
-.body-text-wrapper > .corkboard > .body8-blog > .right-column {
-    text-align: center;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body9-blog {
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-    padding-bottom: 40px;
-}
-
-.body-text-wrapper > .corkboard > .body9-blog > .left-column {
-    display: flex;
-    justify-content: center;
-}
-
-.body-text-wrapper > .corkboard > .body9-blog > .right-column {
-    display: flex;
-    justify-content: center;
-}
 
 /* 2. Photo Wrapper & Rotation */
 .photo-wrapper {
@@ -202,7 +114,7 @@ h-1 {
   /* 3. Realistic Photo Frame */
   .photo {
     background-color: #fff;
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 48px 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
     border: 0.5px solid grey;
@@ -301,47 +213,38 @@ h-1 {
   }
 
   .blog-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #ffffff; /* Very light pink background */
-    border: 2px solid #008C45; /* Soft pink border */
+    background-color: #fff5f7; /* Very light pink background */
+    border: 2px solid #ffc1d6; /* Soft pink border */
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
     font-family: "The Girl Next Door", cursive;
   }
 
   .blog-title {
-    color: #008C45;
+    color: #ff6b95;
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
-    border-bottom: 2px dashed #97b0b9;
+    border-bottom: 2px dashed #ffc1d6;
     padding-bottom: 10px;
   }
 
   .blog-content {
-    color: #5e5b5c;
+    color: #7a5c65;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 1.25em;
   }
 
-  .accent {
-    color: #008C45;
+  .pink-accent {
+    color: #ff85a2;
     font-weight: bold;
   }
 
-  .flag-container {
-    display: flex;
-    width: 400px;
-    height: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border: 0.75px solid grey;
-    }
-    .stripe {
-        flex: 1; /* Automatically forces each div to take up exactly 1/3 width */
-        height: 100%;
-    }
-    .green { background-color: #008C45; }
-    .white { background-color: #F4F5F0; }
-    .red   { background-color: #CD212A; }
+
+
+
+
+
