@@ -1,0 +1,196 @@
+.body-text-wrapper {
+    height: fit-content;
+}
+
+.body-text-wrapper > .first-row {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    height: 250px;
+}
+
+.body-text-wrapper > .first-row > .right-column {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.body-text-wrapper > .second-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body-text-wrapper > .third-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-text-wrapper > .fourth-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.body-text-wrapper > .fourth-row > .column {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.body-text-wrapper > .fifth-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.blog-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff; 
+    border: 2px solid #926f98; 
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    font-family: "The Girl Next Door", cursive;
+  }
+
+  .blog-title {
+    color: #926f98;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px dashed #926f98;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .blog-content {
+    color: #5e5b5c;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .accent {
+    color: #926f98;
+    font-weight: bold;
+  }
+
+  
+
+
+/* The Main Photo Box Container */
+.photo-box {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover lift effect for the entire box */
+.photo-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.photo-box video {
+    display: block;
+    width: 100%;       /* Forces video to fill full width of container */
+    height: 100%;      /* Forces video to fill full height of container */
+    object-fit: cover; /* Crops and scales video to fit without stretching or black bars */
+    transition: transform 0.5s ease;
+}
+
+.photo-box:hover video {
+    transform: scale(1.1);
+}
+
+/* Image styling and smooth zoom setup */
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box perfectly without stretching */
+    transition: transform 0.5s ease;
+}
+
+/* Triggers zoom animation when hovering over the card */
+.photo-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Dark gradient overlay that makes white text legible over light images */
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.photo-box:hover .photo-overlay {
+    opacity: 1;
+}
+
+/* Content inside the overlay text box */
+.photo-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Video Box Container Card */
+.video-box {
+    position: relative;
+    width: 400px;
+    height: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Responsive video element configuration */
+.video-box video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops video beautifully to fit card aspect ratio */
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Dark gradient protective text overlay */
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    color: #ffffff;
+    pointer-events: none; /* Allows click events to hit the parent container */
+}
