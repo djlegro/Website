@@ -1,0 +1,82 @@
+
+.body-text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.body-text-wrapper > .center-column {
+    width: 800px;
+    height: fit-content;
+}
+
+.stationery {
+    /* Paper dimensions and positioning */
+    width: 100%;
+    max-width: 800px;
+    background-color: #fcf8f2; /* Parchment base */
+    padding: 60px 80px;
+    box-sizing: border-box;
+    
+    /* Realistic shadow, vignette, and creases */
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.15), 
+        0 6px 6px rgba(0,0,0,0.1),
+        inset 0 0 120px rgba(160, 130, 90, 0.3);
+    border-radius: 4px;
+    position: relative;
+    
+    /* Crease/fold effects */
+    background-image: 
+        linear-gradient(90deg, transparent 50%, rgba(160, 130, 90, 0.04) 50.1%, transparent 50.2%),
+        linear-gradient(0deg, transparent 70%, rgba(160, 130, 90, 0.03) 70.1%, transparent 70.2%);
+    background-size: 100% 100%;
+}
+
+.stationery::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 1px solid rgba(160, 130, 90, 0.2);
+    pointer-events: none;
+    margin: 15px;
+}
+
+/* Typography Styling */
+h-1 {
+    font-family: 'Cinzel', serif;
+    color: #4a3b2c;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4a3b2c;
+    padding-bottom: 10px;
+}
+
+.date {
+    font-family: 'Pinyon Script', cursive;
+    color: #5c4a36;
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 40px;
+    display: block;
+}
+
+p {
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #3b2f21;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-indent: 40px; /* Traditional paragraph indent */
+}
+
+.signature {
+    font-family: 'Pinyon Script', cursive;
+    color: #5c4a36;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 50px;
+    display: block;
+}
