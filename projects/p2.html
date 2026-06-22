@@ -5,11 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Building a 4-Node Kubernetes Cluster</title>
 
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Homemade+Apple&family=Shadows+Into+Light&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f3793b933.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/projects_pages/p2.css">
 </head>
 <body>
-    <h1>The Purpose</h1>
-    <h1>The Circuitry</h1>
-    <h1>The Steps</h1>
-</body>
+    <div class="header-wrapper">
+
+        <div class="left-column">  
+                
+        </div>
+        
+        <div class="center-column">
+            <div class="image">
+                <img src="../images/dj.png" alt="Profile Photo" style="border: 5px solid black" width="100" height="100%">
+            </div> 
+            <div class="nav-wrapper">
+                <div class="title">
+                    <h2 style="font-size: 3.8em;">
+                        My Universal Blip
+                    </h2>
+                    <h1 style="font-size: 1.5em; margin-left: 150px;">
+                        Author: DJ
+                    </h1>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="right-column">
+            <div class="links">
+                    Find Me At: <br>
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.youtube.com/@myuniversalblip706/videos" target="_blank">YouTube</a><br>
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/djhacksmash/" target="_blank">Instagram</a>
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="nav-links-wrapper">
+        <div class="links">
+            <a href="../index.html">Introduction ·</a>
+            <a href="../background.html">Background ·</a>
+            <a href="../blog.html">Blog ·</a>
+            <a href="../projects.html">Projects</a>
+        </div>
+    </div>
+
+    <div class="body-text-wrapper">
+        <div class="first-row">
+            
+            <div class="left-column">
+                <div style="padding-left: 40px;" class="sticky-note-left">
+                        <p style="font-size: 1.5em;"><span style="text-decoration: underline;">Project: </span><br>
+                        <span style="margin-left: 10px;">Building a 4-Node</span>
+                        <span style="margin-left: 10px;">Kubernetes Cluster</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div>
+                    The Build
+                </div>
+            </div>
+
+        </div>
+        <div class="second-row">
+            <div class="blog-container">
+                <div class="blog-title"> Purpose</div>
+                <div class="blog-content">
+                    <p style="text-indent: 20px;"> The purpose of this project is to build the necessary infrastructure for testing parallel computing.
+                        A 4-node architecture pools the processors of multiple machines to execute thousands of matrix operations or data calculations simultaneously.
+                        Where large data datasets are automatically partitioned and sent to different worker nodes. This architecture prevents a single system from 
+                        running out of memory. Also, container orchestration tools like Kubernetes use optimized schedulers to automatically deploy parallel workers 
+                        to the specific nodes with the most available CPU resources. Where if one node fails during a long-running simulation, Kubernetes automatically 
+                        restarts the failed worker container on a remaining active node to preserve progress. Data scientists can use framework tools like Apache Spark or 
+                        Ray on top of the cluster to coordinate complex parallel data jobs.</p>
+                    
+                </div>
+
+            </div>
+
+            <div class="blog-container">
+                <div class="blog-title"> Supplies</div>
+                <div class="blog-content">
+                    4x  --> Raspberry Pi 4 Model B 2019 Quad Core 64 Bit WiFi Bluetooth (4GB)<br><br>
+                    2x --> Raspberry Pi Rack Case with 120mm RGB LED 5V Cooling Fan<br><br>
+                    4x --> Power over Ethernet (PoE) hat for Raspberry Pi 4B <br><br>
+                    4x --> 32GB microSD cards <br><br>
+                    1x --> 5-Port Ethernet PoE Switch (4 PoE Ports, 1 Uplink) <br><br>
+                    4x --> 1ft CAT 6 Ethernet cable
+                </div>
+
+            </div>
+        </div>
+
+        <div class="third-row">
+
+            <div class="photo-box">
+                <img src="../images/projects/p2/IMG_9525.jpeg" alt="Supplies">
+                <div class="photo-overlay">
+                    <h3 class="photo-title">Supplies</h3>
+                </div>
+            </div>
+
+            <div class="photo-box">
+                <img src="../images/projects/p2/IMG_9528.jpeg" alt="Raspberry Pi 4B">
+                <div class="photo-overlay">
+                    <h3 class="photo-title">Raspberry Pi 4B</h3>
+                </div>
+            </div>
+
+            <div class="photo-box">
+                <img src="../images/projects/p2/IMG_9529.jpeg" alt="PoE Hat">
+                <div class="photo-overlay">
+                    <h3 class="photo-title">PoE Hat</h3>
+                </div>
+            </div>
+
+            <div class="photo-box">
+                <video autoplay loop muted playsinline>
+                    <source src="../images/projects/p2/IMG_9545.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="photo-overlay">
+                    <h3 class="photo-title">Cluster Case</h3>
+                </div>
+            </div>
+        
+        </div> 
+
+        <div class="fourth-row">
+            
+            <div class="column">
+                The Configuration
+            </div>
+
+        </div>
+
+        <div class="fifth-row">
+            <div class="blog-container">
+                <div class="blog-title"> Software</div>
+                <div class="blog-content">
+                    <span style="font-weight: bolder; text-decoration: underline;">Ubuntu Server 26.04 LTS</span>
+                    <p style="margin-left: 40px;"> 
+                    --> Lightweight Headless OS <br>
+                    --> Command Line Only <br>
+                    --> Optimized Resource Allocation <br>
+                    --> Optimized to Run Docker or Kubernetes Clusters</p>
+
+                    <span style="font-weight: bolder; text-decoration: underline;">Docker</span>
+                    <p style="margin-left: 40px;"> 
+                    --> an open-source platform that uses operating system-level virtualization to bundle an application and all its required dependencies into a single, lightweight package called a container <br>
+                    </p>
+
+                    <span style="font-weight: bolder; text-decoration: underline;">Kubernetes</span>
+                    <p style="margin-left: 40px;"> 
+                    --> an open-source container orchestration platform designed to automatically deploy, scale, and manage containerized applications across a cluster of servers <br>
+                        <p style="margin-left: 70px;"> 
+                            >> Pod - The smallest deployable unit in Kubernetes, which hosts one or more tightly coupled containers. <br><br>
+                            >> Node - A physical or virtual worker machine inside the cluster that executes the assigned Pods. <br><br>
+                            >> Cluster - A set of worker nodes grouped together and managed by a centralized Control Plane. <br><br>
+                            >> Control Plane - The brain of the cluster that schedules workloads and maintains the desired state of the system.
+                        </p>
+                    </p>
+                    
+                    <span style="font-weight: bolder; text-decoration: underline;">Apache Spark</span>
+                    <p style="margin-left: 40px;"> 
+                    --> an open-source, distributed data-processing engine designed to perform lightning-fast analytics on massive data sets across computer clusters<br>
+                        <p style="margin-left: 70px;"> 
+                            >> Resilient Distributed Dataset - The fundamental, fault-tolerant collection of data elements that can be operated on in parallel across a cluster. <br><br>
+                            >> DataFrames & Datasets - Higher-level, optimized abstractions that organize data into named columns, similar to a relational database table. <br><br>
+                            >> Driver Program - The central controller process that runs your main application code and creates the SparkSession. <br><br>
+                            >> Cluster Manager - An external service (like Kubernetes, Apache Mesos, or YARN) that allocates resources across the cluster. <br><br>
+                            >> Worker Nodes - The physical or virtual machines that execute the individual data-processing tasks assigned by the driver.
+                        </p>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="blog-container">
+                <div class="blog-title"> Tools & Configs</div>
+                <div class="blog-content">
+                    <span style="font-weight: bolder; text-decoration: underline;">Raspberry Pi Imager</span><br>
+                        <p style="margin-left: 40px;">- write SD cards with Ubuntu Server 26.04 LTS image file</p>
+                        <div class="video-box" style="margin-left: 80px;">
+                            <video autoplay loop muted playsinline>
+                                <source src="../images/projects/p2/REC-20260615192908.mp4" type="video/mp4">
+                                Your browser does not support the HTML5 video tag.
+                            </video>
+                        </div>
+
+                    <span style="font-weight: bolder; text-decoration: underline;">Docker Install</span>
+                    <p style="margin-left: 40px;"> 
+                    <br>
+                    </p>
+
+                    <span style="font-weight: bolder; text-decoration: underline;">Kubernetes Install</span>
+                    <p style="margin-left: 40px;"> 
+                    <br>
+                        <p style="margin-left: 70px;"> 
+                            
+                        </p>
+                    </p>
+                    
+                    <span style="font-weight: bolder; text-decoration: underline;">Apache Spark Install</span>
+                    <p style="margin-left: 40px;"> 
+                    <br>
+                        <p style="margin-left: 70px;"> 
+                            
+                        </p>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="contact-wrapper">
+            <div class="left-column">
+            </div>
+            <div class="center-column">
+                Contact Me: <br>
+                djhacksmash@gmail.com <br><br>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="right-column">
+            </div> 
+        </div>
+    </div>
+    
+    
+<body>
 </html>
