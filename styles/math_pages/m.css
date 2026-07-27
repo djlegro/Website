@@ -1,0 +1,82 @@
+/* Body Styles */
+.body-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-text-wrapper > .left-column {
+    width: 1000px;
+    display: flex;
+}
+
+.body-text-wrapper > .center-column {
+    width: 1000px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.body-text-wrapper > .right-column {
+    width: 1000px;
+    padding: 10px 50px;
+}
+
+
+
+
+.quantum-system {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* --- The Wave Container --- */
+.wave-box {
+    position: relative;
+    height: 150px;
+    border-bottom: 2px solid #30363d;
+    border-left: 2px solid #30363d;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- The Continuous Wave Line --- */
+.wave-line {
+    width: 200%; /* Make it extra wide to allow seamless scrolling loop */
+    height: 100%;
+    fill: none;
+    stroke: #58a6ff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 5px #1f6feb);
+    
+    /* Moves the wave line left-to-right continuously */
+    animation: wave-propagate 3s linear infinite;
+}
+
+/* --- Animation Definition --- */
+@keyframes wave-propagate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Shifts exactly half its size (one full wavelength block) to loop perfectly */
+        transform: translateX(-50%);
+    }
+}
+
+h-1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 0.85rem;
+}
